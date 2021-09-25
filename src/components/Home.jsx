@@ -25,7 +25,9 @@ function Home() {
                 </div>
             </div>
             <div className="right">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, sint odio numquam sunt officiis quod, laboriosam hic nihil molestias debitis velit omnis tempore suscipit. Doloribus corrupti placeat molestias? Voluptate voluptatem architecto ad tenetur natus ducimus quasi eaque, quo rerum rem corporis aspernatur aliquam necessitatibus neque, repudiandae numquam fugit temporibus debitis provident quidem porro sunt itaque. Laudantium quos natus reiciendis iure consectetur delectus eveniet, repellat architecto dolorem vel labore blanditiis aliquid? Libero autem dolor unde excepturi beatae, molestiae nisi nihil harum nam, fuga dolore eius earum aut. Totam fugiat deleniti cumque quia dolores! Autem nam ex dolor dicta laboriosam expedita optio.
+                <p>I'm a delhi based IT Student who loves making websites and is eager to learn every new technology.</p>
+                <p>I'm currently looking for an opportunity to show my skills.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae assumenda, mollitia, perferendis error officia nihil natus adipisci quidem est fugiat neque, sunt fugit unde rem tempore dicta voluptatem! Ducimus debitis doloribus impedit optio expedita!</p>
             </div>
         </div>
         <div className="skillWrapper">

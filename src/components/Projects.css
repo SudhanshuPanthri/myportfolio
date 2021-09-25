@@ -1,0 +1,24 @@
+.projects {
+  position: relative;
+  margin-top: 60px;
+  height: 90vh;
+  width: 100vw;
+  background-color: coral;
+  color: #fff;
+}
+
+.projectWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.projectCard {
+  margin: 20px;
+  padding: 20px;
+  height: 400px;
+  width: 320px;
+  /* border: 1px solid red; */
+  background-color: rgb(218, 166, 88);
+}
