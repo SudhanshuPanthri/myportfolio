@@ -1,0 +1,62 @@
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: rgb(161, 12, 92);
+}
+
+h4 {
+  font-size: 16px;
+}
+
+.projectCard {
+  display: flex;
+  margin: 20px;
+  height: 50vh;
+  width: 75vw;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.imgSection {
+  position: relative;
+  height: 100%;
+  width: 60%;
+}
+
+.infoSection {
+  position: relative;
+  height: 100%;
+  width: 40%;
+  padding: 20px;
+}
+
+.projectImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.projectBtn {
+  position: absolute;
+  bottom: 15px;
+  padding: 10px;
+  /* margin: 20px 0; */
+  border: none;
+  opacity: 1;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.projectBtn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.infoSection > h2,
+h4 {
+  margin: 10px 0;
+}

@@ -59,8 +59,8 @@ function Home() {
                <ul className='edList'>
                    <li className='edListItem'>Currently pursuing BCA from Jagannath International Management School,Vasant Kunj, Delhi</li>
                    <li className='edListItem'>Secondary Schooling from AGDAV Centenary Public School,Model Town</li>
-                   <li className='edListItem'>12th Board from CBSE, Delhi</li>
-                   <li className='edListItem'>10th Board from CBSE, Delhi</li>
+                   <li className='edListItem'>Passed 12th CBSE Board in 2018</li>
+                   <li className='edListItem'>Passed 10th CBSE Board in 2016</li>
                </ul>
             </div>
         </div>

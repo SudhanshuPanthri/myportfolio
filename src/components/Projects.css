@@ -1,24 +1,20 @@
 .projects {
   position: relative;
-  margin-top: 60px;
-  height: 90vh;
+  height: calc(100vh - 60px);
   width: 100vw;
-  background-color: coral;
-  color: #fff;
+  background: url("https://img5.goodfon.com/wallpaper/nbig/d/11/background-design-poly-vektor-abstraktsiia-oka-project-golub.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 99;
+  background-repeat: no-repeat;
 }
 
 .projectWrapper {
+  margin-top: 80px;
   display: flex;
+  height: 100%;
+  width: 100%;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-}
-
-.projectCard {
-  margin: 20px;
-  padding: 20px;
-  height: 400px;
-  width: 320px;
-  /* border: 1px solid red; */
-  background-color: rgb(218, 166, 88);
 }
