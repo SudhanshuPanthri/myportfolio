@@ -73,10 +73,18 @@ function Home() {
                 <h2>Certificates and Achivements</h2>
             </div>
             <div className="certificates">
+                <div className="certificateWrapper">
                 <img className='certificate' src={Certificate} alt="udemy-certificate" />
+                </div>
+                <div className="certificateWrapper">
                 <img className='certificate' src={guviCertificate} alt="guvi-certificate" />
+                </div>
+                <div className="certificateWrapper">
                 <img className='certificate' src={IBM} alt="guvi-certificate" />
+                </div>
+                <div className="certificateWrapper">
                 <img className='certificate' src={HP} alt="guvi-certificate" />
+                </div>
             </div>
         </div>
         </div>

@@ -5,11 +5,12 @@ a {
 h2 {
   font-size: 24px;
   text-transform: uppercase;
-  color: rgb(161, 12, 92);
+  color: #64ffda;
 }
 
 h4 {
   font-size: 16px;
+  color: #64ffdbbb;
 }
 
 .projectCard {
@@ -40,11 +41,11 @@ h4 {
   border: 1px solid #000;
 }
 
-.projectBtn {
+/* .projectBtn {
   position: absolute;
   bottom: 15px;
   padding: 10px;
-  /* margin: 20px 0; */
+  margin: 20px 0;
   border: none;
   opacity: 1;
   border-radius: 6px;
@@ -54,9 +55,16 @@ h4 {
 .projectBtn:hover {
   opacity: 0.8;
   cursor: pointer;
-}
+} */
 
 .infoSection > h2,
 h4 {
   margin: 10px 0;
+}
+
+.icon-repo {
+  position: absolute;
+  bottom: 15px;
+  font-size: 24px;
+  color: #64ffda;
 }

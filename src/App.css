@@ -5,7 +5,8 @@
   overflow-x: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Press Start 2P", cursive;
 }
 
 a {

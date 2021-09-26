@@ -1,5 +1,6 @@
 import React from 'react'
 import './Project.css'
+import {InstagramOutlined,ReloadOutlined,GithubOutlined,TwitterOutlined} from '@ant-design/icons'
 
 const Project=(props)=>(
         <div className='projectCard'>
@@ -10,9 +11,9 @@ const Project=(props)=>(
                 <h2>{props.item.name}</h2>
                 <h4>{props.item.info}</h4>
                 <h4>Live Site Preview : <br/><a href={props.item.livePreview} target='_blank'>{props.item.livePreview}</a></h4>
-                <button className='projectBtn'>
-                <a href={props.item.github} target='_blank'>Github Repo Link</a>
-                </button>
+                <a href={props.item.github} target='_blank'>
+                    <GithubOutlined className='icon-repo' />
+                </a>
             </div>
         </div>
 )
