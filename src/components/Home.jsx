@@ -4,6 +4,10 @@ import BART from '../assets/BART.png'
 import SkillBar from 'react-skillbars'
 import skillLogo from '../assets/skillLogo.svg'
 import edLogo from '../assets/edLogo.svg'
+import Certificate from '../assets/udemyCertificate.jpg'
+import guviCertificate from '../assets/guviCertificate.jpg'
+import IBM from '../assets/IBM.jpg'
+import HP from '../assets/HPLife.jpg'
 function Home() {
     const skills=[{
         type:"HTML",level:65
@@ -62,6 +66,17 @@ function Home() {
                    <li className='edListItem'>Passed 12th CBSE Board in 2018</li>
                    <li className='edListItem'>Passed 10th CBSE Board in 2016</li>
                </ul>
+            </div>
+        </div>
+        <div className="certificationWrapper">
+            <div className="heading">
+                <h2>Certificates and Achivements</h2>
+            </div>
+            <div className="certificates">
+                <img className='certificate' src={Certificate} alt="udemy-certificate" />
+                <img className='certificate' src={guviCertificate} alt="guvi-certificate" />
+                <img className='certificate' src={IBM} alt="guvi-certificate" />
+                <img className='certificate' src={HP} alt="guvi-certificate" />
             </div>
         </div>
         </div>

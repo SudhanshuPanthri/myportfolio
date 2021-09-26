@@ -18,7 +18,6 @@ function Navbar() {
                 <li className='listItem'>
                 <Link to='/projects' className='link'>Projects</Link>
                 </li>
-                <li className='listItem'><Link to='/contact' className='link'>Contact</Link></li>
             </ul>
             </div>
             <div className="socialIcons">
