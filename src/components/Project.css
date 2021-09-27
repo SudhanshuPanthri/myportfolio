@@ -41,22 +41,6 @@ h4 {
   border: 1px solid #000;
 }
 
-/* .projectBtn {
-  position: absolute;
-  bottom: 15px;
-  padding: 10px;
-  margin: 20px 0;
-  border: none;
-  opacity: 1;
-  border-radius: 6px;
-  font-size: 16px;
-}
-
-.projectBtn:hover {
-  opacity: 0.8;
-  cursor: pointer;
-} */
-
 .infoSection > h2,
 h4 {
   margin: 10px 0;

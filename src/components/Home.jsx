@@ -31,19 +31,18 @@ function Home() {
             <div className="right">
                 <p>I'm a delhi based IT Student who loves making websites and is eager to learn every new technology.</p>
                 <p>I'm currently looking for an opportunity to show my skills.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae assumenda, mollitia, perferendis error officia nihil natus adipisci quidem est fugiat neque, sunt fugit unde rem tempore dicta voluptatem! Ducimus debitis doloribus impedit optio expedita!</p>
             </div>
         </div>
         <div className="skillWrapper">
             <div className="leftSkill">
                 <h2>Skills</h2>
                 <SkillBar skills={skills} height={'8vh'} colors={{
-                    bar:'#1d2f43',
+                    bar:'#6A5ACD',
                     title: {
                         background:{
-                            hue: 220,
-                            saturation:30,
-                            level:50
+                            hue: 120,
+                            saturation:50,
+                            level:60
                         }
                     }
                 }}/>
