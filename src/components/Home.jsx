@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+import {LinkedinOutlined,GithubOutlined,InstagramOutlined} from '@ant-design/icons'
 import BART from '../assets/BART.png'
 import SkillBar from 'react-skillbars'
 import skillLogo from '../assets/skillLogo.svg'
@@ -25,12 +26,25 @@ function Home() {
                 <img className='image' src={BART} alt="logo" />
                 <div className="headings">
                 <h1>Hi, i'm Sudhanshu Panthri</h1>
-                <h3>I'm a Front-end Developer</h3>
+                <span>A ,</span>
+                <h3>Front-end Developer</h3>
+                <h3>Dark Chocolate Addict.</h3>
+                <h3>Tech-Enthusiast</h3>
+                <h3>Part Time Gamer</h3>
+                <p>I'm a delhi based IT Student who loves making websites and loves to work on interesting projects.</p>
+                <div className='iconWrapper'>
+                <a href='https://www.linkedin.com' target='_blank'>
+                    <LinkedinOutlined className='icon-main'/>
+                </a>
+                <a href='https://www.linkedin.com' target='_blank'>
+                    <GithubOutlined className='icon-main'/>
+                </a>
+                <a href='https://www.linkedin.com' target='_blank'>
+                    <InstagramOutlined className='icon-main'/>
+                </a>
                 </div>
-            </div>
-            <div className="right">
-                <p>I'm a delhi based IT Student who loves making websites and is eager to learn every new technology.</p>
-                <p>I'm currently looking for an opportunity to show my skills.</p>
+                <div className='border'></div>
+                </div>
             </div>
         </div>
         <div className="skillWrapper">

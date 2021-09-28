@@ -4,7 +4,7 @@ import {HeartTwoTone } from '@ant-design/icons'
 function Footer() {
     return (
         <div className='footer'>
-            <h3>Made With <HeartTwoTone twoToneColor='#eb2f96'/> in React</h3>
+            <h3>Made With <span><HeartTwoTone twoToneColor='#eb2f96'/></span> in React</h3>
         </div>
     )
 }
