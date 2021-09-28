@@ -15,9 +15,15 @@ function Home() {
     },{
         type:"CSS",level:70
     },{
-        type:"Javascript",level:60
+        type:"Javascript",level:65
     },{
-        type:"React JS",level:55
+        type:"React JS",level:60
+    },
+    {
+        type:"Node JS",level:50
+    },
+    {
+        type:"C++",level:65
     }]
     return (
         <div className='parent'>
@@ -50,7 +56,7 @@ function Home() {
         <div className="skillWrapper">
             <div className="leftSkill">
                 <h2>Skills</h2>
-                <SkillBar skills={skills} height={'8vh'} colors={{
+                <SkillBar skills={skills} height={'5vh'} colors={{
                     bar:'#6A5ACD',
                     title: {
                         background:{
