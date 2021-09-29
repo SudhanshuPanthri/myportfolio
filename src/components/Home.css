@@ -45,10 +45,18 @@ span {
   border-bottom: 15px solid #64ffda;
 }
 
+.border-lg {
+  width: 70%;
+  margin-bottom: 10px;
+  border-bottom: 20px solid #64ffda;
+}
+
 .image {
-  height: 300px;
-  width: 260px;
+  height: 290px;
+  width: 280px;
   margin: 0 20px;
+  border-radius: 50%;
+  border: 2px solid #64ffda;
 }
 
 .skillWrapper {
@@ -138,10 +146,6 @@ span {
   align-items: center;
 }
 
-.headings {
-  border-bottom: 20px solid #64ffda;
-}
-
 .heading {
   margin: 40px;
 }
@@ -157,7 +161,8 @@ span {
 
 .certificateWrapper {
   padding: 10px;
-  margin: 0 20px;
+  margin: 10px 20px;
+  border: 2px solid #64ffda;
 }
 
 .certificate {

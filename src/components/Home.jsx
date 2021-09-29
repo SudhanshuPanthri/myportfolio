@@ -1,7 +1,8 @@
 import React from 'react'
 import './Home.css'
+import { motion } from 'framer-motion'
 import {LinkedinOutlined,GithubOutlined,InstagramOutlined} from '@ant-design/icons'
-import BART from '../assets/BART.png'
+import pfp from '../assets/pfp.jpg'
 import SkillBar from 'react-skillbars'
 import skillLogo from '../assets/skillLogo.svg'
 import edLogo from '../assets/edLogo.svg'
@@ -10,6 +11,21 @@ import guviCertificate from '../assets/guviCertificate.jpg'
 import IBM from '../assets/IBM.jpg'
 import HP from '../assets/HPLife.jpg'
 import Resume from '../assets/Resume.pdf'
+
+const containerVariant={
+    hidden:{
+        opacity:1,
+    },
+    visible:{
+        opacity:1,
+        transition:{delay:0.5,duration:1}
+    },
+    exit:{
+        x:'-100vw',
+        transition:{ease:'easeInOut'}
+    }
+}
+
 function Home() {
     const skills=[{
         type:"HTML",level:65
@@ -31,19 +47,59 @@ function Home() {
         type:"Python",level:40
     }]
     return (
-        <div className='parent'>
+        <motion.div className='parent' variants={containerVariant} initial='hidden' animate='visible' exit='exit'>
         <div className='home'>
             <div className="left">
-                <img className='image' src={BART} alt="logo" />
+                <img className='image' src={pfp} alt="logo" />
                 <div className="headings">
-                <h1>Hi, i'm Sudhanshu Panthri</h1>
-                <span>A ,</span>
-                <h3>Front-end Developer</h3>
-                <h3>Dark Chocolate Addict.</h3>
-                <h3>Tech-Enthusiast</h3>
-                <h3>Part Time Gamer</h3>
-                <p>I'm a delhi based IT Student who loves making websites and loves to work on interesting projects.</p>
-                <div className='iconWrapper'>
+                <motion.div initial='hidden' animate='visible' variants={{
+                    hidden:{
+                        scale:0.8,
+                        opacity:0
+                    },
+                    visible:{
+                        scale:1,
+                        opacity:1,
+                        transition:{
+                            delay:0.8
+                        }
+                    }
+                }}>
+                   <h1>Hi, i'm Sudhanshu Panthri</h1>
+                </motion.div>
+                <motion.div initial='hidden' animate='visible' variants={{
+                    hidden:{
+                        scale:0.8,
+                        opacity:0
+                    },
+                    visible:{
+                        scale:1,
+                        opacity:1,
+                        transition:{
+                            delay:1.2
+                        }
+                    }
+                }}>
+                  <span>A ,</span>
+                  <h3>Front-end Developer</h3>
+                  <h3>Dark Chocolate Addict.</h3>
+                  <h3>Tech-Enthusiast</h3>
+                  <h3>Part Time Gamer</h3>
+                  <p>I'm a delhi based IT Student who loves making websites and loves to work on interesting projects.</p>
+                </motion.div>
+                <motion.div className='iconWrapper' initial='hidden' animate='visible' variants={{
+                    hidden:{
+                        scale:0.8,
+                        opacity:0
+                    },
+                    visible:{
+                        scale:1,
+                        opacity:1,
+                        transition:{
+                            delay:1.4
+                        }
+                    }
+                }}>
                 <a href='https://www.linkedin.com' target='_blank'>
                     <LinkedinOutlined className='icon-main'/>
                 </a>
@@ -54,15 +110,40 @@ function Home() {
                     <InstagramOutlined className='icon-main'/>
                 </a>
                 <button className='resumeBtn'><a href={Resume} download>Resume</a></button>
-                </div>
-                <div className='border'></div>
+                </motion.div>
+                <motion.div className='border' initial='hidden' animate='visible' variants={{
+                    hidden:{
+                        scale:0.8,
+                        opacity:0
+                    },
+                    visible:{
+                        scale:1,
+                        opacity:1,
+                        transition:{
+                            delay:1.6
+                        }
+                    }
+                }}></motion.div>
+                <motion.div className='border-lg' initial='hidden' animate='visible' variants={{
+                    hidden:{
+                        scale:0.8,
+                        opacity:0
+                    },
+                    visible:{
+                        scale:1,
+                        opacity:1,
+                        transition:{
+                            delay:1.8
+                        }
+                    }
+                }}></motion.div>
                 </div>
             </div>
         </div>
         <div className="skillWrapper">
             <div className="leftSkill">
                 <h2>Skills</h2>
-                <SkillBar skills={skills} height={'4vh'} colors={{
+                <SkillBar skills={skills} height={'3.8vh'} colors={{
                     bar:'#6A5ACD',
                     title: {
                         background:{
@@ -112,7 +193,7 @@ function Home() {
                 </div>
             </div>
         </div>
-        </div>
+        </motion.div>
     )
 }
 

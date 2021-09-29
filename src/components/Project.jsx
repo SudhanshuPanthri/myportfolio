@@ -1,9 +1,25 @@
 import React from 'react'
 import './Project.css'
 import {InstagramOutlined,ReloadOutlined,GithubOutlined,TwitterOutlined} from '@ant-design/icons'
+import { motion } from 'framer-motion'
+
+const containerVariant={
+    hidden:{
+        opacity:0,
+    },
+    visible:{
+        opacity:1,
+        transition:{delay:0.5,duration:1}
+    },
+    exit:{
+        x:'100vw',
+        transition:{ease:'easeInOut'}
+    }
+}
+
 
 const Project=(props)=>(
-        <div className='projectCard'>
+        <motion.div className='projectCard' variants={containerVariant} initial='hidden' animate='visible' exit='exit'>
             <div className="imgSection">
                 <img className='projectImg' src={props.item.imageSrc} alt="" />
             </div>
@@ -15,7 +31,7 @@ const Project=(props)=>(
                     <GithubOutlined className='icon-repo' />
                 </a>
             </div>
-        </div>
+        </motion.div>
 )
 
 export default Project;
