@@ -9,6 +9,7 @@ import Certificate from '../assets/udemyCertificate.jpg'
 import guviCertificate from '../assets/guviCertificate.jpg'
 import IBM from '../assets/IBM.jpg'
 import HP from '../assets/HPLife.jpg'
+import Resume from '../assets/Resume.pdf'
 function Home() {
     const skills=[{
         type:"HTML",level:65
@@ -24,6 +25,10 @@ function Home() {
     },
     {
         type:"C++",level:65
+    },{
+        type:"Java",level:55
+    },{
+        type:"Python",level:40
     }]
     return (
         <div className='parent'>
@@ -48,6 +53,7 @@ function Home() {
                 <a href='https://www.linkedin.com' target='_blank'>
                     <InstagramOutlined className='icon-main'/>
                 </a>
+                <button className='resumeBtn'><a href={Resume} download>Resume</a></button>
                 </div>
                 <div className='border'></div>
                 </div>
@@ -56,7 +62,7 @@ function Home() {
         <div className="skillWrapper">
             <div className="leftSkill">
                 <h2>Skills</h2>
-                <SkillBar skills={skills} height={'5vh'} colors={{
+                <SkillBar skills={skills} height={'4vh'} colors={{
                     bar:'#6A5ACD',
                     title: {
                         background:{

@@ -26,7 +26,7 @@ span {
 }
 
 .iconWrapper {
-  width: 30%;
+  width: 40%;
   margin-bottom: 10px;
   display: flex;
   border-bottom: 10px solid #64ffda;
@@ -169,4 +169,19 @@ span {
 
 .certificate:hover {
   transform: scale(1.09);
+}
+
+.iconsWrap {
+  margin: 0 10px;
+}
+
+.resumeBtn {
+  padding: 4px;
+  border: 2px solid #64ffda;
+  width: 100px;
+  border-radius: 6px;
+  background-color: #64ffdb71;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
 }
