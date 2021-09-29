@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState,useEffect } from 'react'
 import './Home.css'
 import { motion } from 'framer-motion'
 import {LinkedinOutlined,GithubOutlined,InstagramOutlined} from '@ant-design/icons'
+import MoonLoader from 'react-spinners/MoonLoader'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 import pfp from '../assets/pfp.jpg'
 import SkillBar from 'react-skillbars'
 import skillLogo from '../assets/skillLogo.svg'
@@ -27,6 +30,16 @@ const containerVariant={
 }
 
 function Home() {
+    const [loading,setLoading]=useState(false)
+
+    useEffect(()=>{
+        setLoading(true)
+        setTimeout(()=>{
+            setLoading(false)
+        },2000)
+        Aos.init({duration:2000})
+    },[])
+    
     const skills=[{
         type:"HTML",level:65
     },{
@@ -46,7 +59,18 @@ function Home() {
     },{
         type:"Python",level:40
     }]
+
+    const override =`
+     height:100vh;
+     background-color:#112240;
+     width:100vw;
+     display: flex;
+     justify-content:center;
+     align-items:center;
+     `;
     return (
+        <>
+        {loading ? <MoonLoader color='#64ffda' loading={loading} css={override} size={25}/> : 
         <motion.div className='parent' variants={containerVariant} initial='hidden' animate='visible' exit='exit'>
         <div className='home'>
             <div className="left">
@@ -140,7 +164,7 @@ function Home() {
                 </div>
             </div>
         </div>
-        <div className="skillWrapper">
+        <div data-aos='fade-right' className="skillWrapper">
             <div className="leftSkill">
                 <h2>Skills</h2>
                 <SkillBar skills={skills} height={'3.8vh'} colors={{
@@ -160,7 +184,7 @@ function Home() {
                 </div>
             </div>
         </div>
-        <div className="educationWrapper">
+        <div data-aos='fade-left' className="educationWrapper">
             <div className="leftEducation">
                 <img className='logo' src={edLogo} alt="logo" />
             </div>
@@ -174,7 +198,7 @@ function Home() {
                </ul>
             </div>
         </div>
-        <div className="certificationWrapper">
+        <div data-aos='fade-up' className="certificationWrapper">
             <div className="heading">
                 <h2>Certificates and Achivements</h2>
             </div>
@@ -193,7 +217,9 @@ function Home() {
                 </div>
             </div>
         </div>
-        </motion.div>
+        </motion.div>}
+        
+        </>
     )
 }
 

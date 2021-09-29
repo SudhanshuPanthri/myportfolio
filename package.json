@@ -9,6 +9,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "antd": "^4.16.13",
+    "aos": "^2.3.4",
     "framer-motion": "^4.1.17",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -16,6 +17,7 @@
     "react-scripts": "4.0.3",
     "react-skillbars": "^1.6.1",
     "react-smooth-scrolling": "^1.0.2",
+    "react-spinners": "^0.11.0",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
