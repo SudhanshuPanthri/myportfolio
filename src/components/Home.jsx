@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react'
 import './Home.css'
 import { motion } from 'framer-motion'
 import {LinkedinOutlined,GithubOutlined,InstagramOutlined} from '@ant-design/icons'
-import MoonLoader from 'react-spinners/MoonLoader'
+import PropagateLoader from 'react-spinners/PropagateLoader'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import pfp from '../assets/pfp.jpg'
@@ -70,7 +70,7 @@ function Home() {
      `;
     return (
         <>
-        {loading ? <MoonLoader color='#64ffda' loading={loading} css={override} size={25}/> : 
+        {loading ? <PropagateLoader color='#64ffda' loading={loading} css={override} size={25}/> : 
         <motion.div className='parent' variants={containerVariant} initial='hidden' animate='visible' exit='exit'>
         <div className='home'>
             <div className="left">
