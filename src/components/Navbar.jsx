@@ -1,13 +1,13 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {InstagramOutlined,ReloadOutlined,GithubOutlined,TwitterOutlined} from '@ant-design/icons'
+import {InstagramOutlined,ReloadOutlined,GithubOutlined,LinkedinOutlined} from '@ant-design/icons'
 import './Navbar.css'
 function Navbar() {
     return (
         <div className='navbar'>
             <div className="logo">
                 <Link to='/'>
-                    <ReloadOutlined className='logo'/>
+                    <h3 className='name'>Sudhanshu Panthri</h3>
                 </Link>
             </div>
             <div className="linkWrapper">
@@ -21,14 +21,14 @@ function Navbar() {
             </ul>
             </div>
             <div className="socialIcons">
-                <a href="https://www.instagram.com" target='_blank'>
+                <a href="https://www.instagram.com/sudhanshuuwu" target='_blank'>
                 <InstagramOutlined className='icon' />
                 </a>
                 <a href="https://github.com/SudhanshuPanthri" target='_blank'>
                 <GithubOutlined className='icon'/>
                 </a>
-                <a href="https://www.twitter.com" target='_blank'>
-                <TwitterOutlined className='icon'/>
+                <a href="https://www.linkedin.com/in/sudhanshu-p-43797ab1" target='_blank'>
+                <LinkedinOutlined className='icon'/>
                 </a>
             </div>
         </div>

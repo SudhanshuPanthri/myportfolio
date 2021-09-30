@@ -5,6 +5,8 @@ import {LinkedinOutlined,GithubOutlined,InstagramOutlined} from '@ant-design/ico
 import PropagateLoader from 'react-spinners/PropagateLoader'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer';
 import pfp from '../assets/pfp.jpg'
 import SkillBar from 'react-skillbars'
 import skillLogo from '../assets/skillLogo.svg'
@@ -36,7 +38,7 @@ function Home() {
         setLoading(true)
         setTimeout(()=>{
             setLoading(false)
-        },2000)
+        },1000)
         Aos.init({duration:2000})
     },[])
     
@@ -55,7 +57,7 @@ function Home() {
     {
         type:"C++",level:65
     },{
-        type:"Java",level:55
+        type:"Java",level:45
     },{
         type:"Python",level:40
     }]
@@ -71,6 +73,8 @@ function Home() {
     return (
         <>
         {loading ? <PropagateLoader color='#64ffda' loading={loading} css={override} size={25}/> : 
+        <div>
+        <Navbar />
         <motion.div className='parent' variants={containerVariant} initial='hidden' animate='visible' exit='exit'>
         <div className='home'>
             <div className="left">
@@ -89,7 +93,7 @@ function Home() {
                         }
                     }
                 }}>
-                   <h1>Hi, i'm Sudhanshu Panthri</h1>
+                   <h1>Hi, i'm Sudhanshu Panthri :D</h1>
                 </motion.div>
                 <motion.div initial='hidden' animate='visible' variants={{
                     hidden:{
@@ -124,13 +128,13 @@ function Home() {
                         }
                     }
                 }}>
-                <a href='https://www.linkedin.com' target='_blank'>
+                <a href='https://www.linkedin.com/in/sudhanshu-p-43797ab1' target='_blank'>
                     <LinkedinOutlined className='icon-main'/>
                 </a>
-                <a href='https://www.linkedin.com' target='_blank'>
+                <a href='https://github.com/SudhanshuPanthri' target='_blank'>
                     <GithubOutlined className='icon-main'/>
                 </a>
-                <a href='https://www.linkedin.com' target='_blank'>
+                <a href='https://www.instagram.com/sudhanshuuwu' target='_blank'>
                     <InstagramOutlined className='icon-main'/>
                 </a>
                 <button className='resumeBtn'><a href={Resume} download>Resume</a></button>
@@ -217,8 +221,9 @@ function Home() {
                 </div>
             </div>
         </div>
-        </motion.div>}
-        
+        </motion.div>
+        </div>}
+        <Footer />
         </>
     )
 }

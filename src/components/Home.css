@@ -95,6 +95,7 @@ span {
 .educationWrapper {
   display: flex;
   height: 60vh;
+  width: 100%;
 }
 
 .leftEducation {

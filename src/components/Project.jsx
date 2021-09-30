@@ -2,7 +2,6 @@ import React from 'react'
 import './Project.css'
 import {InstagramOutlined,ReloadOutlined,GithubOutlined,TwitterOutlined} from '@ant-design/icons'
 import { motion } from 'framer-motion'
-
 const containerVariant={
     hidden:{
         opacity:0,
