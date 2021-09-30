@@ -93,7 +93,7 @@ function Home() {
                         }
                     }
                 }}>
-                   <h1>Hi, i'm Sudhanshu Panthri :D</h1>
+                   <h1>Hi, i'm Sudhanshu Panthri</h1>
                 </motion.div>
                 <motion.div initial='hidden' animate='visible' variants={{
                     hidden:{

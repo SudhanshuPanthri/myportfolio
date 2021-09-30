@@ -41,3 +41,19 @@
 .name {
   font-size: 18px;
 }
+
+@media (min-width: 250px) and (max-width: 800px) and (max-height: 900px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .logo {
+    display: none;
+  }
+
+  .listItem {
+    padding: 8px;
+  }
+  .socialIcons {
+    display: none;
+  }
+}
